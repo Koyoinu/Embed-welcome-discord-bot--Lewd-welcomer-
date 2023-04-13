@@ -13,8 +13,17 @@ const ID = "";
 const Mainchan = "";
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setPresence({
+      status: 'online',
+      activities: [
+          {
+              name: 'Exploring the Universe!~',
+              type: 'CUSTOM_STATUS'
+          }
+      ]
+    })
+  });
 
 client.on("guildMemberAdd", (member) => {
     const welcomeEmbed = new Discord.MessageEmbed()
