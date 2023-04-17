@@ -26,7 +26,7 @@ client.on('ready', () => {
   });
 
 client.on("guildMemberAdd", (member) => {
-    const welcomeEmbed = new Discord.MessageEmbed()
+    const welcomeEmbed = new client.MessageEmbed()
         .setTitle('**Welcome to Lewd Universe!**')
         .setDescription('Please get comfy and feel free to look around after you have done all the required stuff after joining the server!~')
         .setColor('#9900ff')
